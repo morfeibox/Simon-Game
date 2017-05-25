@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.66, maximum-scale=0.66, minimum-scale=0.66">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simon Game - Trump Edition</title>
+</head>
+<body>
+<!-- Facebook like share script-->
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="container img-responsive">
+        <div class="text-center" id="game-condition" ><p id="condition"></p></div>
+
+        <div class="bord-fixed">
+        <div class="game-bord">
+            <div class="centered">
+            <div role="button" class="play-buttons green-button" id="1"></div>
+            <div role="button" class="play-buttons red-button" id="2"></div>
+            <div role="button" class="clear-fix"></div>
+            <div role="button" class="play-buttons yellow-button" id="4"></div>
+            <div role="button" class="play-buttons blue-button" id="3"></div>
+            </div>
+        <div class="game-controls outer-shadow"></div>
+        <div class="game-controls text-center">
+            <div class="logo">SIMON</div><span>&reg;</span>
+           <div class="row">
+            <div class="count">88</div>
+            <div role="button" class="start"></div>
+            <div role="button" class="strict"></div>
+            <div class="strict-led"></div>
+           </div>
+               <span class="control-caption-start">start</span>
+               <span class="control-caption">strict</span>
+                <div class="centered">
+                    <label class="switch">
+                        <input class="switch-input" type="checkbox" />
+                        <span class="switch-label" data-on="On" data-off="Off"></span>
+                        <span class="switch-handle"></span>
+                    </label>
+        </div>
+
+
+        </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <span class="learn-more" title= "'Simon is an electronic game of memory skill launched in 1978 at Studio 54 in New York City and was an immediate success, becoming a pop culture symbol of the 70's and 80's.'  How to play : Switch on the game. After pressing “Start” the device creates a series of tones and lights and requires you to repeat the series. If the user succeeds the series becomes progressively longer and more complex. You can see your current level on the display. If you click a wrong button the computer will show you the same sequence. However, if there is  “Strict mode” enabled you will loose the game and should start from the beginning.
+ Good Luck!"><i class="fa fa-info-circle" aria-hidden="true"></i>How to Play</span>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+<footer>
+    <span class="text-center" >coded By Atanas Beychev</span>
+    <div class="fb-like" data-href="http://abeychev.tk/simon/index.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+</footer>
+</html>
